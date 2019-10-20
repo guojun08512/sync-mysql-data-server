@@ -1,0 +1,9 @@
+version: 0.1.0
+port: 8090
+canal:
+  host: 127.0.0.1
+  port: 11111
+  schedule: 1
+elastic:
+  host: http://127.0.0.1:9200
+  sniff: true

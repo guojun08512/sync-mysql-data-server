@@ -1,0 +1,24 @@
+
+CREATE USER canal IDENTIFIED BY 'canal';  
+GRANT ALL PRIVILEGES ON *.* TO 'canal'@'%' ;
+FLUSH PRIVILEGES;
+
+CREATE DATABASE `test`;
+
+USE test;
+
+
+CREATE TABLE `test` (
+        `id` INT(11) NOT NULL,
+        `name` VARCHAR(50) NOT NULL
+)
+ENGINE=InnoDB
+;
+
+
+
+CREATE TABLE `xdual` (
+       `ID` int(11) NOT NULL AUTO_INCREMENT,
+       `X` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+       PRIMARY KEY (`ID`)
+     ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ;
